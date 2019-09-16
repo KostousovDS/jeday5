@@ -38,11 +38,8 @@ gulp.task('js', function () {
 
 gulp.task('copy', function () {
     gulp.src('./src/images/**.*')
-        .pipe(gulp.dest('./build/images/'))
-});
-
-gulp.task('copy', function () {
-    gulp.src('./src/fonts/**.*')
+        .pipe(gulp.dest('./build/images/'));
+    gulp.src('./src/fonts/**/**.*')
         .pipe(gulp.dest('./build/fonts/'))
 });
 
@@ -50,7 +47,7 @@ gulp.task('connect', function() {
     connect.server({
         root: 'build',
         livereload: true,
-        port: 9002
+        port: 9003
     });
 });
 
