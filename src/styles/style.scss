@@ -2,3 +2,66 @@
 @import "./helper/padding";
 @import "./helper/font-size";
 @import "./helper/margin";
+
+@import "../../node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/_bourbon";
+
+@import "./variables";
+
+//1.header
+
+@import "./1.header/header";
+@import "./1.header/jumbatron";
+@import "./1.header/form";
+@import "./1.header/bottom";
+
+//2.ocenka
+
+@import "./2.ocenka/header";
+@import "./2.ocenka/content";
+@import "./2.ocenka/bottom";
+
+//3.sdelki
+
+@import "3.sdelki/header";
+@import "3.sdelki/content";
+@import "3.sdelki/bottom";
+
+//4.buch_uslugi
+
+@import "./4.buch_uslugi/header";
+@import "./4.buch_uslugi/content";
+@import "./4.buch_uslugi/bottom";
+
+//5.preimuschestva
+
+@import "./5.preimuschestva/header";
+@import "./5.preimuschestva/content";
+@import "./5.preimuschestva/bottom";
+
+
+//6.kak_rabotaem
+
+@import "./6.kak_rabotaem/header";
+@import "./6.kak_rabotaem/content";
+@import "./6.kak_rabotaem/bottom";
+
+//7.svayzatsya
+
+@import "./7.svayzatsya/header";
+
+//8.nashi_raboti
+
+@import "./8.nashi_raboti/header";
+
+//9.professionali
+
+@import "./9.professionali/header";
+@import "./9.professionali/content";
+@import "./9.professionali/form";
+
+//10.footer
+
+@import "./10.footer/footer";
+
+
+
