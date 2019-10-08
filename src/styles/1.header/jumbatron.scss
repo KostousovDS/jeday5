@@ -1,0 +1,55 @@
+@import "../variables";
+@import "../../../node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/_bourbon";
+
+.header-wrap {
+  margin-top: 40px;
+
+  h1 {
+    margin-top: 120px;
+    color: $text-color;
+    border-bottom: $main-color 8px solid;
+    display: inline-block;
+    padding-bottom: 8px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 0;
+
+    li {
+      display: block;
+      font-family: "RalewaySemiBold" $helvetica;
+      font-size: 18px;
+      line-height: em(30px);
+      position: relative;
+      padding-left: 16px;
+
+      &::before {
+        content: '';
+        display: block;
+        width: 6px;
+        height: 11px;
+        @include triangle(12px, $main-color, right);
+        position: absolute;
+        top: 10px;
+        left: 0;
+
+      }
+
+      a {
+        text-decoration: none;
+        color: $text-color;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.header-left {
+  margin-bottom: 50px;
+}
+

@@ -7,6 +7,109 @@
 
 @import "./variables";
 
+@include font-face("PFCentroSlabProBold", "../fonts/PFCentroSlabProBold/PFCentroSlabProBold", $file-formats: eot woff ttf);
+@include font-face("PFCentroSlabProMedium", "../fonts/PFCentroSlabProMedium/PFCentroSlabProMedium", $file-formats: eot woff ttf);
+@include font-face("RalewayBold", "../fonts/RalewayBold/RalewayBold", $file-formats: eot woff ttf);
+@include font-face("RalewayRegular", "../fonts/RalewayRegular/RalewayRegular", $file-formats: eot woff ttf);
+@include font-face("RalewaySemiBold", "../fonts/RalewaySemiBold/RalewaySemiBold", $file-formats: eot woff ttf);
+@include font-face("RobotoBold", "../fonts/RobotoBold/RobotoBold", $file-formats: eot woff ttf);
+
+body {
+  font-size: 15px;
+  min-width: 320px;
+  position: relative;
+  line-height: em(22px);
+  font-family: "RalewayRegular", sans-serif;
+  overflow-x: hidden;
+  color: $body-color;
+}
+
+.hidden {
+  display: none;
+}
+
+a, a:active, a:focus, a:hover {
+  color: $main-color;
+  text-decoration: underline;
+  outline: 0;
+}
+
+.headers {
+  font-family: "PFCentroSlabProMedium", $helvetica;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: $headers-color;
+}
+
+.before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.trans {
+  transition: all .5s ease;
+}
+
+
+h1, h2, h3, h4, h5 ,h6 {
+  @extend .headers;
+  }
+
+h1 {
+  font-size: em(48px);
+}
+
+h2 {
+  font-size: em(30px);
+}
+
+h3 {
+  font-size: em(24px);
+}
+
+//h4 {
+//  font-size: em(18px);
+//}
+//
+//h5 {
+//  font-size: em(12px);
+//}
+//
+//h6 {
+//  font-size: em(6px);
+//}
+//
+b, strong {
+  font-family: "RalewayBold", $helvetica;
+}
+
+.button-wrap {
+  text-align: center;
+}
+
+.buttons {
+  display: inline-block;
+  border: none;
+  background-color: $main-color;
+  color: #111;
+  font-family: "PFCentroSlabProBold", $helvetica;
+  font-size: em(22px);
+  padding: 12px 30px;
+  border-bottom: #b97200 3px solid;
+  transition: all .5s ease;
+  &:hover {
+    background-color: #ffb338;
+  }
+  &:active {
+    background-color: #db8c0e;
+  }
+}
+
+
 //1.header
 
 @import "./1.header/header";
@@ -62,6 +165,8 @@
 //10.footer
 
 @import "./10.footer/footer";
+
+@import "./media";
 
 
 

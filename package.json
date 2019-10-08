@@ -1,7 +1,7 @@
 {
   "name": "jeday5",
   "version": "1.0.0",
-  "description": "",
+  "description": "Создание шаблона Gulp для работы проекта на Bootstrap 4\r 1. Устанавливаем на компьютере программу PphpStorm.\r 2. Устанавливаем на компьютере программу Node.js.\r 3. Создаем на жестком диске папку для проекта и открываем ее в программе PhpStorm (далее - Программа).\r 4. В корневой папке проекта создадим минимальнодостаточную структуру, сотоящую из вложенных папок, для проекта:\r \tпапка проекта --> папка SRC --> папка fonts\r \t\t      --> файл gulpfile.js\r \t\t      --> файл readme.md\r \t\t\t\t    --> папка images\r \t\t\t\t    --> папка js\t--> файл index.js\r \t\t\t\t    --> папка styles\t--> файл style.scss\r \t\t\t\t    --> папка template\t--> файл header.html\r \t\t\t\t\t\t\t--> файл section.html\r \t\t\t\t    --> файл index.html",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,6 +22,15 @@
     "bourbon": "^6.0.0",
     "jquery": "^3.3.1",
     "node-bourbon": "^4.2.8",
-    "popper.js": "^1.14.7"
-  }
+    "popper.js": "^1.14.7",
+    "waypoints": "^4.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KostousovDS/prepare-2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KostousovDS/prepare-2/issues"
+  },
+  "homepage": "https://github.com/KostousovDS/prepare-2#readme"
 }

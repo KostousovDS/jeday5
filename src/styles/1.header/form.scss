@@ -1,0 +1,57 @@
+@import "../variables";
+
+.forms {
+  background-color: transparentize($forms-color, .2);
+  padding: 35px 35px 30px;
+  color: $form-text;
+  font-size: em(14px);
+  border-bottom: #1a222b 3px solid;
+
+  h4 {
+    color: $text-color;
+    font-family: "PFCentroSlabProMedium", $helvetica;
+    font-size: em(33px);
+    text-transform: none;
+    margin: 0;
+  }
+
+  p {
+    line-height: em(23px);
+    margin-top: 10px;
+  }
+
+  label {
+    margin-top: 22px;
+    margin-bottom: 20px;
+    display: block;
+
+    span {
+      letter-spacing: 1.5px;
+      display: block;
+      margin-bottom: 6px;
+      color: #778390;
+    }
+  }
+
+  input {
+    display: block;
+    width: 100%;
+    border: none;
+    box-shadow: 0 -3px #1F2A36;
+    background-color: $input-color;
+    text-indent: 10px;
+    padding: 10px 0;
+    transition: all .5s ease;
+    //color: #fff;
+    //font-family: "PFCentroSlabProMedium", $helvetica;
+    //font-size: em(20px);
+    &:focus {
+      box-shadow: 0 -6px #1F2A36;
+      background-color: #394e65;
+    }
+  }
+  .buttons {
+    margin-top: 10px;
+  }
+}
+
