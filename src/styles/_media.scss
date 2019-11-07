@@ -72,6 +72,14 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+  .s6-items-container {
+    .teams {
+      .team {
+        margin: 12px 12px;
+      }
+    }
+  }
+
   .s4-items-container {
     .cards {
       .card {
