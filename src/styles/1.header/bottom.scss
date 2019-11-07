@@ -1,1 +1,22 @@
 @import "../variables";
+
+.arrow-wrap {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  top: 50px;
+}
+
+
+.arrow-bottom {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url(../../images/arrow_down.png);
+  cursor: pointer;
+  opacity: .7;
+  transition: all .25s ease;
+  &:hover {
+    opacity: 1;
+  }
+}

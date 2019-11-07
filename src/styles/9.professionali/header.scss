@@ -1,0 +1,65 @@
+@import "../variables";
+
+.homesect.section_8 {
+  padding-top: 80px;
+
+  .forms {
+    background-color: #ddd;
+    border-color: #828282;
+    h4 {
+      color: $headers-color;
+    }
+    p {
+      color: #5e6267;
+    }
+    input {
+      background-color: #c0c0c0;
+      color: $body-color!important;
+    }
+  }
+}
+
+.s8-left {
+  .section-head {
+    margin-bottom: 50px;
+
+    h2 {
+      margin-top: 0;
+      text-align: left;
+
+      &::after {
+        transform: none;
+        left: 0;
+      }
+    }
+
+    p {
+      text-align: left;
+    }
+  }
+}
+
+.s8-items {
+  .s8-item {
+    text-align: center;
+
+    .img-wrap {
+      height: 72px;
+
+      img {
+        height: 72px;
+      }
+    }
+
+    p {
+      font-family: "RalewayBold", $helvetica;
+      font-size: em(14px);
+      line-height: em(19px);
+      margin-top: 18px;
+    }
+  }
+}
+.s8-right {
+  margin-bottom: 70px;
+}
+

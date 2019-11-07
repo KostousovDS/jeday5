@@ -1,11 +1,10 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
-@import "./helper/padding";
-@import "./helper/font-size";
-@import "./helper/margin";
-
+//@import "./helper/padding";
+//@import "./helper/font-size";
+//@import "./helper/margin";
 @import "../../node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/_bourbon";
-
 @import "./variables";
+@import "../libs/Magnific-Popup/magnific-popup";
 
 @include font-face("PFCentroSlabProBold", "../fonts/PFCentroSlabProBold/PFCentroSlabProBold", $file-formats: eot woff ttf);
 @include font-face("PFCentroSlabProMedium", "../fonts/PFCentroSlabProMedium/PFCentroSlabProMedium", $file-formats: eot woff ttf);
@@ -23,6 +22,10 @@ body {
   overflow-x: hidden;
   color: $body-color;
 }
+
+.jflex {
+  justify-content: center;
+  }
 
 .hidden {
   display: none;
@@ -55,36 +58,26 @@ a, a:active, a:focus, a:hover {
 }
 
 
-h1, h2, h3, h4, h5 ,h6 {
+h1, h2, h3, h4, h5, h6 {
   @extend .headers;
-  }
+  //line-height: em(22px);
+}
 
 h1 {
-  font-size: em(48px);
+  font-size: em(50px);
 }
 
 h2 {
-  font-size: em(30px);
+  font-size: em(32px);
 }
 
 h3 {
-  font-size: em(24px);
+  font-size: em(26px);
 }
 
-//h4 {
-//  font-size: em(18px);
-//}
-//
-//h5 {
-//  font-size: em(12px);
-//}
-//
-//h6 {
-//  font-size: em(6px);
-//}
-//
 b, strong {
   font-family: "RalewayBold", $helvetica;
+  font-weight: normal;
 }
 
 .button-wrap {
@@ -101,11 +94,95 @@ b, strong {
   padding: 12px 30px;
   border-bottom: #b97200 3px solid;
   transition: all .5s ease;
+  text-decoration: none;
+
   &:hover {
     background-color: #ffb338;
+    text-decoration: none;
+    color: #111;
   }
+
   &:active {
     background-color: #db8c0e;
+    text-decoration: none;
+    color: #111;
+  }
+
+  &:focus {
+    color: #111;
+    text-decoration: none;
+  }
+}
+
+.homesect {
+  padding-top: 70px;
+  background-color: $color-section;
+  position: relative;
+
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .section-head {
+    margin-bottom: 65px;
+
+    p {
+      margin-top: 60px;
+      text-align: center;
+
+      a {
+        font-family: "RalewayBold", $helvetica;
+      }
+    }
+
+    h2 {
+      text-align: center;
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: '';
+        height: 4px;
+        width: 165px;
+        background-color: $main-color;
+        display: block;
+        bottom: -30px;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+    }
+    h3 {
+      text-align: center;
+      margin-top: 50px;
+    }
+  }
+
+  .section-bottom {
+    background-color: $color-bottom;
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  &::before {
+    content: '';
+    height: 6px;
+    width: 100%;
+    position: absolute;
+    top: -6px;
+    background-image: url(../images/bah_1.png);
+  }
+}
+
+.section_1 {
+  .section-content {
+    background-image: url(../images/s1_gray_bg.png);
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  .section-bottom {
+    background-color: $headers-color;
   }
 }
 

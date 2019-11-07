@@ -37,7 +37,7 @@ gulp.task('js', function () {
 });
 
 gulp.task('copy', function () {
-    gulp.src('./src/images/**.*')
+    gulp.src('./src/images/**/**.*')
         .pipe(gulp.dest('./build/images/'));
     gulp.src('./src/fonts/**/**.*')
         .pipe(gulp.dest('./build/fonts/'));

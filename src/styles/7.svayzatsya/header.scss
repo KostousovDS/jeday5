@@ -1,0 +1,79 @@
+@import "../variables";
+
+.s6-items-container {
+  justify-content: center;
+
+  .teams {
+    .team {
+      margin: 0 12px;
+    }
+  }
+}
+
+.teams {
+  text-align: center;
+  perspective: 600px;
+
+  .team {
+    &-on {
+      opacity: 1;
+    }
+    &-off {
+      transform: rotateY(100deg);
+      opacity: 0;
+    }
+    .img-wrap {
+      transition: all .25s ease;
+    }
+
+    transition: all 1.2s ease;
+    width: 260px;
+    display: inline-block;
+    color: $form-text;
+    font-size: em(15px);
+    line-height: em(22px);
+    padding: 54px 28px 48px;
+    vertical-align: top;
+    border-bottom: #D6D6D6 4px solid;
+    background-color: $color-bottom;
+
+    h4 {
+      color: $body-color;
+      font-family: "RalewayBold", $helvetica;
+      font-size: em(18px);
+      margin-top: 35px;
+      margin-bottom: 10px;
+      text-transform: none;
+    }
+
+    p {
+      font-size: em(15px);
+      color: #6e7b8b;
+      margin-bottom: 20px;
+      margin-top: 0;
+      height: auto;
+    }
+
+    .team-phone {
+      font-family: "RobotoBold", $helvetica;
+      font-size: em(18px);
+      color: $body-color;
+      margin-bottom: 0;
+    }
+
+    .card-icon {
+      overflow: hidden;
+      width: 120px;
+      height: 120px;
+      line-height: 0;
+      border-radius: 10em;
+      box-shadow: 0 0 0 5px #d6d6d6;
+
+      img {
+        width: 100%;
+      }
+
+      display: inline-block;
+    }
+  }
+}

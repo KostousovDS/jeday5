@@ -1,0 +1,93 @@
+@import "../variables";
+
+.s_gray {
+  background-color: $color-bottom;
+
+  &::before {
+    background-image: url("../../images/bah_3.png");
+  }
+
+  .section-bottom {
+    background-color: #d6d6d6;
+  }
+}
+
+.section-pb {
+  padding-bottom: 70px;
+}
+
+.s4-items-container {
+  justify-content: center;
+
+  .cards {
+    .card {
+      margin: 0 12px;
+    }
+  }
+}
+
+.cards {
+  text-align: center;
+  perspective: 600px;
+
+  .card {
+    &-on {
+      opacity: 1;
+    }
+    &-off {
+      transform: rotateY(100deg);
+      opacity: 0;
+    }
+    &:hover {
+      border-color: $main-color;
+      .img-wrap {
+        transform: scale(1.1);
+      }
+    }
+    .img-wrap {
+      transition: all .25s ease;
+    }
+    transition: all 1.2s ease;
+    width: 260px;
+    display: inline-block;
+    background-color: $headers-color;
+    color: $form-text;
+    font-size: em(15px);
+    line-height: em(22px);
+    padding: 54px 28px 48px;
+    vertical-align: top;
+    border-bottom: #1A222B 4px solid;
+
+    h4 {
+      color: $color-bottom;
+      font-family: "RalewayBold", $helvetica;
+      font-size: em(18px);
+      margin-top: 30px;
+      margin-bottom: 18px;
+    }
+
+    p {
+      margin-bottom: 0;
+      margin-top: 0;
+      height: 75px;
+
+      strong {
+        color: $main-color;
+      }
+    }
+
+    .card-icon {
+      width: 120px;
+      height: 120px;
+      line-height: 120px;
+      background-color: $main-color;
+      border-radius: 10em;
+
+      img {
+        width: 75px;
+      }
+
+      display: inline-block;
+    }
+  }
+}
