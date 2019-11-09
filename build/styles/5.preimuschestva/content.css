@@ -1,7 +1,7 @@
 .s_gray {
   background-color: #e5e5e5; }
   .s_gray::before {
-    background-image: url("../../images/bah_3.png"); }
+    background-image: url("images/bah_3.png"); }
   .s_gray .section-bottom {
     background-color: #d6d6d6; }
 

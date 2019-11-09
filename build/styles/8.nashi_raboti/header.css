@@ -231,7 +231,7 @@
     .slider .owl-controls .owl-nav > div {
       height: 29px;
       width: 16px;
-      background-image: url("../../images/slider_arrows.png");
+      background-image: url("images/slider_arrows.png");
       position: absolute;
       left: 20px;
       opacity: .5;

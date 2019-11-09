@@ -27,7 +27,7 @@
 .top-line {
   padding-top: 45px;
   min-height: 160px;
-  background-image: url(../../images/top_gradient.png);
+  background-image: url(images/top_gradient.png);
   background-repeat: repeat-x; }
 
 .logo {
