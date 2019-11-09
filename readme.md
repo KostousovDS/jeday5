@@ -162,3 +162,7 @@ gulp.task('default', gulp.parallel('watch', 'connect', 'rigger', 'copy', 'sass',
 19. Запустим команду git init
 
 20. Коммитим проект.
+
+
+
+проект можно посмортеть по адресу: https://kostousovds.github.io/jeday5/build/
