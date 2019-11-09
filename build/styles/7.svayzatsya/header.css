@@ -1,0 +1,54 @@
+.s6-items-container {
+  justify-content: center; }
+  .s6-items-container .teams .team {
+    margin: 0 12px; }
+
+.teams {
+  text-align: center;
+  perspective: 600px; }
+  .teams .team {
+    transition: all 1.2s ease;
+    width: 260px;
+    display: inline-block;
+    color: #97a4b2;
+    font-size: em(15px);
+    line-height: em(22px);
+    padding: 54px 28px 48px;
+    vertical-align: top;
+    border-bottom: #D6D6D6 4px solid;
+    background-color: #e5e5e5; }
+    .teams .team-on {
+      opacity: 1; }
+    .teams .team-off {
+      transform: rotateY(100deg);
+      opacity: 0; }
+    .teams .team .img-wrap {
+      transition: all .25s ease; }
+    .teams .team h4 {
+      color: #333;
+      font-family: "RalewayBold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-size: em(18px);
+      margin-top: 35px;
+      margin-bottom: 10px;
+      text-transform: none; }
+    .teams .team p {
+      font-size: em(15px);
+      color: #6e7b8b;
+      margin-bottom: 20px;
+      margin-top: 0;
+      height: auto; }
+    .teams .team .team-phone {
+      font-family: "RobotoBold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-size: em(18px);
+      color: #333;
+      margin-bottom: 0; }
+    .teams .team .card-icon {
+      overflow: hidden;
+      width: 120px;
+      height: 120px;
+      line-height: 0;
+      border-radius: 10em;
+      box-shadow: 0 0 0 5px #d6d6d6;
+      display: inline-block; }
+      .teams .team .card-icon img {
+        width: 100%; }

@@ -1,0 +1,55 @@
+.s5-items-container {
+  justify-content: center; }
+  .s5-items-container .tc-item {
+    margin: 0 5px; }
+
+.triangles-container {
+  color: #fff;
+  font-family: "PFCentroSlabProMedium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: em(19px);
+  margin: 20px 0 70px;
+  text-align: center; }
+  .triangles-container .tc-item {
+    width: 290px;
+    height: 128px;
+    display: inline-block;
+    position: relative;
+    margin-left: -45px;
+    vertical-align: top;
+    cursor: default;
+    transition: all .5s ease; }
+    .triangles-container .tc-item:first-child {
+      margin-left: 0; }
+      .triangles-container .tc-item:first-child .tc-content {
+        margin-left: 50px; }
+    .triangles-container .tc-item:hover {
+      transform: scale(1.08);
+      z-index: 3; }
+      .triangles-container .tc-item:hover path {
+        fill-opacity: 0 !important;
+        stroke-opacity: 1 !important; }
+    .triangles-container .tc-item svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0; }
+    .triangles-container .tc-item .tc-content {
+      position: relative;
+      z-index: 1;
+      margin-top: 43px;
+      margin-left: 60px;
+      text-align: left;
+      padding-left: 40px;
+      opacity: 0;
+      transition: all 1s ease; }
+      .triangles-container .tc-item .tc-content-on {
+        opacity: 1; }
+      .triangles-container .tc-item .tc-content span {
+        font-size: em(20px);
+        margin-left: -22px;
+        position: absolute; }
+      .triangles-container .tc-item .tc-content img {
+        height: 40px;
+        float: left;
+        margin-right: 32px;
+        margin-left: -40px; }

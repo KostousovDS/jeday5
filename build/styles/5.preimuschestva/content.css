@@ -1,0 +1,61 @@
+.s_gray {
+  background-color: #e5e5e5; }
+  .s_gray::before {
+    background-image: url("../../images/bah_3.png"); }
+  .s_gray .section-bottom {
+    background-color: #d6d6d6; }
+
+.section-pb {
+  padding-bottom: 70px; }
+
+.s4-items-container {
+  justify-content: center; }
+  .s4-items-container .cards .card {
+    margin: 0 12px; }
+
+.cards {
+  text-align: center;
+  perspective: 600px; }
+  .cards .card {
+    transition: all 1.2s ease;
+    width: 260px;
+    display: inline-block;
+    background-color: #2c3949;
+    color: #97a4b2;
+    font-size: em(15px);
+    line-height: em(22px);
+    padding: 54px 28px 48px;
+    vertical-align: top;
+    border-bottom: #1A222B 4px solid; }
+    .cards .card-on {
+      opacity: 1; }
+    .cards .card-off {
+      transform: rotateY(100deg);
+      opacity: 0; }
+    .cards .card:hover {
+      border-color: #F39F18; }
+      .cards .card:hover .img-wrap {
+        transform: scale(1.1); }
+    .cards .card .img-wrap {
+      transition: all .25s ease; }
+    .cards .card h4 {
+      color: #e5e5e5;
+      font-family: "RalewayBold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-size: em(18px);
+      margin-top: 30px;
+      margin-bottom: 18px; }
+    .cards .card p {
+      margin-bottom: 0;
+      margin-top: 0;
+      height: 75px; }
+      .cards .card p strong {
+        color: #F39F18; }
+    .cards .card .card-icon {
+      width: 120px;
+      height: 120px;
+      line-height: 120px;
+      background-color: #F39F18;
+      border-radius: 10em;
+      display: inline-block; }
+      .cards .card .card-icon img {
+        width: 75px; }
