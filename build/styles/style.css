@@ -7760,7 +7760,6 @@ strong {
   display: inline-block;
   width: 40px;
   height: 40px;
-  background-image: url(../../images/arrow_down.png);
   cursor: pointer;
   opacity: .7;
   transition: all .25s ease; }
@@ -7776,7 +7775,6 @@ strong {
     height: 67px;
     position: absolute;
     bottom: 0;
-    background-image: url(../../images/s1_triangle.svg);
     z-index: 2;
     width: 100%;
     background-position: top;
@@ -7885,7 +7883,6 @@ strong {
   margin-bottom: 25px; }
 
 .section_3 .section-content {
-  background-image: url(../../images/s3_sun_bg.png);
   background-repeat: no-repeat;
   background-position: top;
   min-height: 850px;
