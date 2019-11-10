@@ -7,7 +7,7 @@
     height: 67px;
     position: absolute;
     bottom: 0;
-    background-image: url(images/s1_triangle.svg);
+    background-image: url(../../images/s1_triangle.svg);
     z-index: 2;
     width: 100%;
     background-position: top;
